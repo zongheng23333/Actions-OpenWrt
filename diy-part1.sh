@@ -19,6 +19,3 @@
 sed -i '$a src-git kenzo https://github.com/kenzok8/openwrt-packages' feeds.conf.default
 sed -i '$a src-git small https://github.com/kenzok8/small' feeds.conf.default
 
-sed -i 's/l92.168.1.1/l92.168.6.1/g' package/base-files/files/bin/config_generate
-#修改默认主题为design
-sed -i 's/luci-theme-bootstrap/luci-theme-design/g' feeds/luci/collections/luci/Makefile
